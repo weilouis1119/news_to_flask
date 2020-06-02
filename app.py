@@ -7,7 +7,7 @@ tes('https://udn.com/news/cate/2/6639','scoical')
 tes('https://udn.com/news/cate/2/7227','exerice')
 tes('https://udn.com/news/cate/2/6645','stock_market')
 tes('https://udn.com/news/cate/1013','travel')
-
+#把圖片轉成可以放到html的型態
 def return_img_stream(img_local_path):
     import base64
     img_stream = ''
@@ -16,6 +16,7 @@ def return_img_stream(img_local_path):
         img_stream = img_f.read()
         img_stream = base64.b64encode(img_stream).decode()
     return img_stream
+#爬取該主題的前十筆新聞標題及網址
 def get_url_title(url):
     global html
     html=[]
@@ -33,8 +34,8 @@ def get_url_title(url):
                 count+=1
     return html
 
-app=Flask(__name__) #__name__代表執行的模組
-@app.route("/",methods=['POST','GET']) #含式的裝飾
+app=Flask(__name__) 
+@app.route("/",methods=['POST','GET']) 
 def index():
     if request.method=='POST':
         if request.values['send']=='送出':
