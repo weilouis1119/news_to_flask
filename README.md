@@ -15,6 +15,9 @@
 # Templates 資料夾
 放置網頁所需要的html檔
 
+# 開啟網頁影片.mov(需下載)
+網頁開啟後的模樣
+
 # 需要pip的模組
 pip install requests<br>
 pip install beautifulsoup4<br>
