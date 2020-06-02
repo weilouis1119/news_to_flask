@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 import jieba
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-def tes(url,filename):    
+def tes(url,filename):
+    #爬取每篇新聞內容
     def GetNewsContent(WebAddr):
         global news_dic
         article=[]
@@ -21,7 +22,7 @@ def tes(url,filename):
             if i != None:
                 article.append(i.text)
         return article
-    
+    #對新聞內容做jieba斷詞
     def GenKeywords(s,threshold):
         global news
         remainderWords=[]
@@ -66,7 +67,7 @@ def tes(url,filename):
                         news_dic.setdefault(i,news[i])
                 count+=1
     
-    #文字雲
+    #製作文字雲
     def FuncFilter(a):
         if (a not in stopWords and a != '\n'):
             return a
