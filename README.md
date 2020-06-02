@@ -13,7 +13,7 @@
 文字雲的圖檔
 
 # 需要pip的模組
-pip install requests
+pip install requests,'\n'
 pip install beautifulsoup4
 pip install jieba
 pip install wordcloud
