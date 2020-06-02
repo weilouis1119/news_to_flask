@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Show Image</title>
+</head>
+
+<body>
+    <h1>股市新聞關鍵字文字雲</h1>
+    <img style="width:720px" src="data:;base64,{{ img_stream }}">
+    <button onclick="window.location.href='http://127.0.0.1:5000'">按我回首頁</button>
+    <p>新聞網址及標題</p>
+    <thead>
+        <th>新聞網址連結</th><br>
+    </thead>
+    <tbody>
+        {% for i in Name %}
+            <a style="color: blue" href={{i.url}} target="_blank" title="">{{i.title}}</a><br>
+        {% endfor %}
+
+
+    </tbody>
+    
+
+
+
+</body>
+</html>
