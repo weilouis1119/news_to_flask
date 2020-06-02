@@ -12,6 +12,9 @@
 # exerice.png,scoical.png,stock_market.png,travel.png
 文字雲的圖檔
 
+# Templates 資料夾
+放置網頁所需要的html檔
+
 # 需要pip的模組
 pip install requests<br>
 pip install beautifulsoup4<br>
