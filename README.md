@@ -14,8 +14,8 @@
 
 # 需要pip的模組
 pip install requests<br>
-pip install beautifulsoup4
-pip install jieba
-pip install wordcloud
+pip install beautifulsoup4<br>
+pip install jieba<br>
+pip install wordcloud<br>
 pip install Flask
 
