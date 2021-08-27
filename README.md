@@ -1,3 +1,8 @@
+# 此處為舊版，已更新於 news
+
+url : https://github.com/weilouis1119/news
+
+
 # 使用介紹
 
 # news_wordcioud.py
